@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="calcu">
+        <div id="heading">
+            <p>Calculator</p>
+        </div>
+        <form name="form">
+			<input id="num1">
+		</form>
+        <div>
+            <ul id="layer1">
+                <li><input type="button" id="9" value="9" onclick="insert(9)"></input></li>
+                <li><input type="button" id="8" value="8" onclick="insert(8)"></input></li>
+                <li><input type="button" id="7" value="7" onclick="insert(7)"></input></li>
+                <li><input type="button" id="add" value="+" onclick="insert('+')"></input></li>
+            </ul>
+        <div>
+            <ul id="layer2">
+                <li><input type="button" id="6" value="6" onclick="insert(6)"></input></li>
+                <li><input type="button" id="5" value="5" onclick="insert(5)"></input></li>
+                <li><input type="button" id="4" value="4" onclick="insert(4)"></input></li>
+                <li><input type="button" id="subtract" value="-" onclick="insert('-')"></input></li>
+            </ul>
+        </div> 
+        <div>
+            <ul id="layer3">
+                <li><input type="button" id="3" value="3" onclick="insert(3)"></input></li>
+                <li><input type="button" id="2" value="2" onclick="insert(2)"></input></li>
+                <li><input type="button" id="1" value="1" onclick="insert(1)"></input></li>
+                <li><input type="button" id="multiply" value="×" onclick="insert('*')"></input></li>
+            </ul>
+        </div>
+        <div>
+            <ul id="layer3">
+                <li><input type="button" id="clear" value="C" onclick="clearinput()"></input></li>
+                <li><input type="button" id="0" value="0" onclick="insert(0)"></input></li>
+                <li><input type="button" id="equals" value="=" onclick="result()"></input></li>
+                <li><input type="button" id="divide" value="÷" onclick="insert('/')"></input></li>
+            </ul>
+        </div>
+        </div>
+    </div>
+   
+    
+</body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="myscript.js"></script>
+</html>
